@@ -36,6 +36,7 @@ textarea {
 /* code box when locked */
 
 #box {
+	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
