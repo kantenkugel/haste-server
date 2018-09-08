@@ -76,7 +76,7 @@ for (var name in config.documents) {
   winston.info('loading static document', { name: name, path: path });
   if (data) {
     preferredStore.set(name, data, function(cb) {
-      winston.debug('loaded static document', { success: cb });
+      winston.debug('loaded static document', { name: name, success: cb });
     }, true);
   }
   else {
